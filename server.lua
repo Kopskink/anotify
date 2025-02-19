@@ -1,7 +1,7 @@
 QBCore = exports['qb-core']:GetCoreObject()
 
 lib.addCommand('anotify', {
-    help = 'Saada admin teavitus soovitud isikule.',
+    help = 'Send an admin notification to the desired person.',
     restricted = 'group.admin'
 }, function(source, args, raw)
     TriggerClientEvent('kps-anotify:client:PullUpInputDialog', source)
